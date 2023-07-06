@@ -70,6 +70,8 @@ return [
         App\Providers\AppServiceProvider::class,
         App\Providers\ParseServiceProvider::class,
         App\Providers\ItemRepositoryServiceProvider::class,
+        Illuminate\Validation\ValidationServiceProvider::class,
+        Illuminate\Translation\TranslationServiceProvider::class
     ],
 
 ];

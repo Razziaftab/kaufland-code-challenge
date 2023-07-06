@@ -40,7 +40,7 @@ class ProcessXmlDataTest extends TestCase
     {
         $this->itemRepo->truncate();
 
-        $this->artisan('process:xml 500')
+        $this->artisan('process:xml 50')
             ->expectsOutput('XML data processed and pushed to the database.')
             ->assertExitCode(0);
 

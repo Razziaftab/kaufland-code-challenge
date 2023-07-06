@@ -35,7 +35,7 @@ class XMLParseService implements ParseServiceInterface
                     'flavored'          => $result->Flavored->__toString(),
                     'seasonal'          => $result->Seasonal->__toString(),
                     'in_stock'          => $result->Instock == 'Yes' ? 1 : 0,
-                    'facebook'          => $result->Facebook,
+                    'facebook'          => $result->Facebook->__toString(),
                     'is_kcup'           => (int) $result->IsKCup,
                     'created_at'        => $dateTime,
                     'updated_at'        => $dateTime,
